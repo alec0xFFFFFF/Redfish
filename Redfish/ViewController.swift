@@ -102,11 +102,12 @@ class ViewController: UIViewController {
                 view.removeFromSuperview()
             }
         }
-        
+        let cmdistance = Int(distance*100)
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-        label.center = CGPoint(x: 160, y: 285)
+        label.center = CGPoint(x: self.view.center.x, y: 750)
+        // todo put label at bottom of screen
         label.textAlignment = .center
-        label.text = "\(distance) m"
+        label.text = "\(cmdistance) cm"
         self.view.addSubview(label)
     }
 
